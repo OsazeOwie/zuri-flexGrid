@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+    background-color: rgb(41, 38, 37);
+}
+
+.grid--con {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 100px;
+    width: 50%;
+    margin-inline: auto;
+    gap: .7em;
+    height: 400px;
+    
+}
+
+.red--box {
+    background-color: rgb(224, 22, 22);
+    padding: 5em 0;
+    grid-column-end: span 2;
+}
+
+.orange--box {
+    background-color: rgb(228, 153, 15);
+    padding: 3em 0;
+}
+
+.green--box {
+    background-color: rgb(44, 150, 44);
+    grid-column-end: 2;
+    padding: 5em 8em;
+    grid-row: span 2;
+}
+
+
+.blue--box1 {
+    background-color: rgb(87, 171, 219);
+    padding: 3.5em 0;
+    grid-column: span 2;
+   
+}
+
+.blue--box2 {
+    background-color: rgb(87, 171, 219);
+    grid-column: span 2;
+    padding: 3.5em 0;
+}
+
+.flex--btn {
+    display: flex;
+    margin: 50px auto;
+    background: linear-gradient(rgb(224, 22, 22), rgb(228, 153, 15), rgb(44, 150, 44), rgb(87, 171, 219));
+    padding: 1em;
+    border: none;
+}
+
+a {
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+    text-decoration: none;
+}
