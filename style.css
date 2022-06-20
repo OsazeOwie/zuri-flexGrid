@@ -11,8 +11,37 @@ body {
     background-color: hsl(0, 0%, 95%);
 }
 
+.content__btn {
+    cursor: pointer;
+    padding: .7em 1.5em;
+    border: 1.5px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    
+    display: inline-block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.content__btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.grid--btn {
+    font-family: 'Big Shoulders Display', cursive;
+    display: flex;
+    background: linear-gradient(hsl(184, 100%, 22%), hsl(179, 100%, 13%),hsl(31, 77%, 52%));
+    margin: 20px auto;
+    padding: .7em 1.5em;
+    border: none;
+    border-radius: 30px;
+} 
+
 .container {
     display: flex;
+    
     width: 60%;
     margin: 0 auto;
     padding: 6em 0;
@@ -65,31 +94,26 @@ body {
     
 }
 
-.content__btn {
-    cursor: pointer;
-    padding: .7em 1.5em;
-    border: 1.5px solid white;
-    background-color: transparent;
-    border-radius: 50px;
-    color: white;
-    display: inline-block;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
 
-.grid--btn {
-    font-family: 'Big Shoulders Display', cursive;
-    display: flex;
-    background: linear-gradient(hsl(184, 100%, 22%), hsl(179, 100%, 13%),hsl(31, 77%, 52%));
-    margin: 20px auto;
-    padding: .7em 1.5em;
-    border: none;
-    border-radius: 30px;
-} 
 
 a {
     color: white;
     text-decoration: none;
+    
+}
+
+@media screen and (max-width:850px){
+    .container {
+        flex-direction: column;
+    }
+
+    .sedans {
+        border-radius: 5px 5px 0 0;
+     }
+
+     .luxury {
+         border-radius: 0 0 5px 5px;
+     }
     
 }
 
